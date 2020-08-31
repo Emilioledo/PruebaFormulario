@@ -1,0 +1,23 @@
+.formatoFormulario {
+    width: 600px;
+    height: 300px;
+    background-color: grey;
+    margin-top: 150px;
+    padding-top: 25px;
+}
+
+ .posicionInputApellido {
+     margin-left: 2px;
+ }
+
+ .posicionInputEmail {
+    margin-left: 20px;
+ }
+
+ .posicionBotonEnviar {
+     margin-left: 110px;
+ }
+
+ .fondoFormulario {
+    background-image: url(../img/fondo_formulario.jpg);
+ }

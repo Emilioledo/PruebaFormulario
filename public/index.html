@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="shortcut icon" href="#"/>
+    <title>Formulario de Inicio</title>
+</head>
+<body class="fondoFormulario">
+        <div class="container-fluid formatoFormulario">
+            <form id="formulario">
+                <div class="row">
+                    <div class="col-6 offset-3">
+                        <h3>Formulario de Inicio</h3>
+                    </div>
+
+                    <div class="col-6 offset-3 ">
+                        <label for="nombreFormulario">Nombre</label>
+                        <input type="text" name="nombreFormulario" id="nombreFormulario">
+                    </div>
+                    <div class="col-6 offset-3 ">
+                        <label for="apellidoFormulario">apellido</label>
+                        <input type="text" name="apellidoFormulario" id="apellidoFormulario" class="posicionInputApellido">
+                    </div>
+                    <div class="col-6 offset-3 ">
+                        <label for="emailFormulario">email</label>
+                        <input type="email" name="emailFormulario" id="emailFormulario" class="posicionInputEmail">
+                    </div>
+                    <div class="col-6 offset-3 ">
+                        <button type="submit" class="btn btn-info posicionBotonEnviar" id="btnEnviar">Enviar!</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    <!-- Javascript -->
+    <script 
+            src="https://code.jquery.com/jquery-3.4.1.min.js" 
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
+            crossorigin="anonymous">
+    </script>
+
+    <script src="./js/validacion.js"></script>
+    <!-- Javascript -->
+</body>
+</html>
