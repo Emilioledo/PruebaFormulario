@@ -5,6 +5,9 @@ const nodemon = require ('nodemon');
 const nodemailer = require("nodemailer");
 const bodyParser = require('body-parser');
 const Joi = require('joi');
+// const SMTPServer = require("smtp-server").SMTPServer;
+// const server = new SMTPServer();
+
 
 /*Mongo DB*/
 const MongoClient = require ('mongodb').MongoClient;
@@ -38,13 +41,12 @@ app.post ('/', (req, res) => {
     
     /*Nodemailer*/
     let transport = nodemailer.createTransport({
-        host: "smtp.mailtrap.io",
-        port: 2525,
-        auth: {
-            user: "2f81e9a69ae537",
-            pass: "03a129e58adeb2"
-        }
-        });
+      service: 'gmail',
+      auth: {
+          user: 'diplouade2020@gmail.com',
+          pass: 'U4D32020!!'
+      }
+    });
     
     let mailOptions = {
         from: '951165034a-7b842e@inbox.mailtrap.io',
