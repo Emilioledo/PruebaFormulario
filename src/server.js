@@ -14,7 +14,7 @@ const MongoClient = require ('mongodb').MongoClient;
 const url = "mongodb+srv://uade-clase-36:9nyyH9W87Aezw5qD@cluster0.pv3xb.mongodb.net/"
 
 /*Setting*/
-const port = 3000;
+const port = process.env.port || 3000;
 const publicDirectory= path.join(__dirname, '../public/');
 
 app.use(express.static(publicDirectory));
