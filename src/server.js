@@ -49,7 +49,7 @@ app.post ('/', (req, res) => {
     });
     
     let mailOptions = {
-        from: '951165034a-7b842e@inbox.mailtrap.io',
+        from: 'diplouade2020@gmail.com',
         to: email,
         subject: 'Prueba',
         text: "Gracias!"
